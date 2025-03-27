@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyager - Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Voyager</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Explore the world with Voyager</h2>
+            <p>Discover the best destinations with the most competitive prices in the market.</p>
+            <a href="#destinations" class="btn">View Destinations</a>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="pexels-suissounet-1530259.jpg" alt="Paris">
+                    <h3>Paris, France</h3>
+                    <p>The city of love and light. Visit the Eiffel Tower and the Louvre.</p>
+                    <span class="price">From $699</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="destination-card">
+                    <img src="pexels-danielbendig-887848.jpg" alt="New York">
+                    <h3>New York, USA</h3>
+                    <p>The city that never sleeps. See the Statue of Liberty.</p>
+                    <span class="price">From $899</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="destination-card">
+                    <img src="pexels-babijaphoto-31338142.jpg" alt="Tokyo">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Mix of tradition and technology. Explore Shibuya district.</p>
+                    <span class="price">From $1,299</span>
+                    <button class="btn">Book Now</button>
+                </div>
+                <div class="destination-card">
+                    <img src="pexels-monica-1118877.jpg" alt="Rio de Janeiro">
+                    <h3>Rio de Janeiro, Brazil</h3>
+                    <p>Marvelous city with stunning beaches and Christ the Redeemer.</p>
+                    <span class="price">From $499</span>
+                    <button class="btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2>Special Packages</h2>
+            <div class="packages-tabs">
+                <button class="tab-btn active" data-tab="honeymoon">Honeymoon</button>
+                <button class="tab-btn" data-tab="family">Family</button>
+                <button class="tab-btn" data-tab="adventure">Adventure</button>
+            </div>
+            <div class="packages-content">
+                <div class="tab-content active" id="honeymoon">
+                    <h3>Romantic Packages</h3>
+                    <p>Special trips for couples with luxury resort stays, romantic dinners and unique experiences.</p>
+                    <ul>
+                        <li>Maldives - Overwater bungalow resort</li>
+                        <li>Santorini - Hotels with volcano views</li>
+                        <li>Venice - Private gondola ride</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="family">
+                    <h3>Family Packages</h3>
+                    <p>Fun for the whole family with theme parks, kids activities and family accommodations.</p>
+                    <ul>
+                        <li>Orlando - Disney World and Universal Studios</li>
+                        <li>Caribbean - All-inclusive resorts</li>
+                        <li>Europe - Cultural itineraries for all ages</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="adventure">
+                    <h3>Adventure Packages</h3>
+                    <p>For adventure seekers: hiking, extreme sports and nature experiences.</p>
+                    <ul>
+                        <li>Nepal - Himalayan trekking</li>
+                        <li>Amazon - Rainforest expedition</li>
+                        <li>New Zealand - Bungee jumping and extreme sports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Voyager</h3>
+                    <p>Your trusted travel agency, taking you to the best destinations since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> contact@voyager.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Voyager Travel Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
